@@ -1,7 +1,7 @@
 {
-  "name": "nahmii-contract-abstractions",
-  "version": "1.0.0",
-  "description": "Smart contract abstractions for nahmii deployed to mainnet",
+  "name": "nahmii-contract-abstractions-ropsten",
+  "version": "1.0.0-ropsten.9",
+  "description": "Smart contract abstractions for nahmii deployed to Ropsten",
   "scripts": {
     "publish:major": "npm version major && npm publish",
     "publish:minor": "npm version minor && npm publish",

@@ -11,14 +11,14 @@
     "absolutePath": "/opt/buildagent/work/855e104608380c36/contracts/BlockNumbIntsLib.sol",
     "exportedSymbols": {
       "BlockNumbIntsLib": [
-        2792
+        2710
       ]
     },
-    "id": 2793,
+    "id": 2711,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2609,
+        "id": 2527,
         "literals": [
           "solidity",
           "^",
@@ -34,23 +34,23 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2792,
+        "id": 2710,
         "linearizedBaseContracts": [
-          2792
+          2710
         ],
         "name": "BlockNumbIntsLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "BlockNumbIntsLib.Entry",
-            "id": 2614,
+            "id": 2532,
             "members": [
               {
                 "constant": false,
-                "id": 2611,
+                "id": 2529,
                 "name": "blockNumber",
                 "nodeType": "VariableDeclaration",
-                "scope": 2614,
+                "scope": 2532,
                 "src": "348:19:9",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -59,7 +59,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2610,
+                  "id": 2528,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "348:7:9",
@@ -73,10 +73,10 @@
               },
               {
                 "constant": false,
-                "id": 2613,
+                "id": 2531,
                 "name": "value",
                 "nodeType": "VariableDeclaration",
-                "scope": 2614,
+                "scope": 2532,
                 "src": "377:12:9",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -85,7 +85,7 @@
                   "typeString": "int256"
                 },
                 "typeName": {
-                  "id": 2612,
+                  "id": 2530,
                   "name": "int256",
                   "nodeType": "ElementaryTypeName",
                   "src": "377:6:9",
@@ -100,46 +100,46 @@
             ],
             "name": "Entry",
             "nodeType": "StructDefinition",
-            "scope": 2792,
+            "scope": 2710,
             "src": "325:71:9",
             "visibility": "public"
           },
           {
             "canonicalName": "BlockNumbIntsLib.BlockNumbInts",
-            "id": 2618,
+            "id": 2536,
             "members": [
               {
                 "constant": false,
-                "id": 2617,
+                "id": 2535,
                 "name": "entries",
                 "nodeType": "VariableDeclaration",
-                "scope": 2618,
+                "scope": 2536,
                 "src": "433:15:9",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage_ptr",
                   "typeString": "struct BlockNumbIntsLib.Entry[]"
                 },
                 "typeName": {
                   "baseType": {
                     "contractScope": null,
-                    "id": 2615,
+                    "id": 2533,
                     "name": "Entry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2614,
+                    "referencedDeclaration": 2532,
                     "src": "433:5:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry"
                     }
                   },
-                  "id": 2616,
+                  "id": 2534,
                   "length": null,
                   "nodeType": "ArrayTypeName",
                   "src": "433:7:9",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry[]"
                   }
                 },
@@ -149,13 +149,13 @@
             ],
             "name": "BlockNumbInts",
             "nodeType": "StructDefinition",
-            "scope": 2792,
+            "scope": 2710,
             "src": "402:53:9",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 2631,
+              "id": 2549,
               "nodeType": "Block",
               "src": "703:51:9",
               "statements": [
@@ -165,14 +165,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2626,
+                        "id": 2544,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2620,
+                        "referencedDeclaration": 2538,
                         "src": "728:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
@@ -180,18 +180,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2627,
+                          "id": 2545,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 40560,
+                          "referencedDeclaration": 42412,
                           "src": "734:5:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 2628,
+                        "id": 2546,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -209,7 +209,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         },
                         {
@@ -217,18 +217,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2625,
+                      "id": 2543,
                       "name": "valueAt",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2662,
+                      "referencedDeclaration": 2580,
                       "src": "720:7:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_int256_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_int256_$",
                         "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (int256)"
                       }
                     },
-                    "id": 2629,
+                    "id": 2547,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -242,15 +242,15 @@
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2624,
-                  "id": 2630,
+                  "functionReturnParameters": 2542,
+                  "id": 2548,
                   "nodeType": "Return",
                   "src": "713:34:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2632,
+            "id": 2550,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -258,31 +258,31 @@
             "name": "currentValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2621,
+              "id": 2539,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2620,
+                  "id": 2538,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2632,
+                  "scope": 2550,
                   "src": "628:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2619,
+                    "id": 2537,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "628:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -294,15 +294,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2624,
+              "id": 2542,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2623,
+                  "id": 2541,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2632,
+                  "scope": 2550,
                   "src": "691:6:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -311,7 +311,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2622,
+                    "id": 2540,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "691:6:9",
@@ -326,7 +326,7 @@
               ],
               "src": "690:8:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "606:148:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -334,7 +334,7 @@
           },
           {
             "body": {
-              "id": 2645,
+              "id": 2563,
               "nodeType": "Block",
               "src": "856:51:9",
               "statements": [
@@ -344,14 +344,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2640,
+                        "id": 2558,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2634,
+                        "referencedDeclaration": 2552,
                         "src": "881:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
@@ -359,18 +359,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2641,
+                          "id": 2559,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 40560,
+                          "referencedDeclaration": 42412,
                           "src": "887:5:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 2642,
+                        "id": 2560,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -388,7 +388,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         },
                         {
@@ -396,18 +396,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2639,
+                      "id": 2557,
                       "name": "entryAt",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2680,
+                      "referencedDeclaration": 2598,
                       "src": "873:7:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2614_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2532_memory_ptr_$",
                         "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (struct BlockNumbIntsLib.Entry memory)"
                       }
                     },
-                    "id": 2643,
+                    "id": 2561,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -417,19 +417,19 @@
                     "nodeType": "FunctionCall",
                     "src": "873:27:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry memory"
                     }
                   },
-                  "functionReturnParameters": 2638,
-                  "id": 2644,
+                  "functionReturnParameters": 2556,
+                  "id": 2562,
                   "nodeType": "Return",
                   "src": "866:34:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2646,
+            "id": 2564,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -437,31 +437,31 @@
             "name": "currentEntry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2635,
+              "id": 2553,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2634,
+                  "id": 2552,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2646,
+                  "scope": 2564,
                   "src": "782:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2633,
+                    "id": 2551,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "782:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -473,31 +473,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2638,
+              "id": 2556,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2637,
+                  "id": 2555,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2646,
+                  "scope": 2564,
                   "src": "845:5:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                    "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2636,
+                    "id": 2554,
                     "name": "Entry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2614,
+                    "referencedDeclaration": 2532,
                     "src": "845:5:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry"
                     }
                   },
@@ -507,7 +507,7 @@
               ],
               "src": "844:7:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "760:147:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -515,7 +515,7 @@
           },
           {
             "body": {
-              "id": 2661,
+              "id": 2579,
               "nodeType": "Block",
               "src": "1027:57:9",
               "statements": [
@@ -527,24 +527,24 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 2656,
+                          "id": 2574,
                           "name": "self",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2648,
+                          "referencedDeclaration": 2566,
                           "src": "1052:4:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           }
                         },
                         {
                           "argumentTypes": null,
-                          "id": 2657,
+                          "id": 2575,
                           "name": "_blockNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2650,
+                          "referencedDeclaration": 2568,
                           "src": "1058:12:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -555,7 +555,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           },
                           {
@@ -563,18 +563,18 @@
                             "typeString": "uint256"
                           }
                         ],
-                        "id": 2655,
+                        "id": 2573,
                         "name": "entryAt",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2680,
+                        "referencedDeclaration": 2598,
                         "src": "1044:7:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2614_memory_ptr_$",
+                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2532_memory_ptr_$",
                           "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (struct BlockNumbIntsLib.Entry memory)"
                         }
                       },
-                      "id": 2658,
+                      "id": 2576,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -584,33 +584,33 @@
                       "nodeType": "FunctionCall",
                       "src": "1044:27:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                        "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                         "typeString": "struct BlockNumbIntsLib.Entry memory"
                       }
                     },
-                    "id": 2659,
+                    "id": 2577,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "value",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 2613,
+                    "referencedDeclaration": 2531,
                     "src": "1044:33:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2654,
-                  "id": 2660,
+                  "functionReturnParameters": 2572,
+                  "id": 2578,
                   "nodeType": "Return",
                   "src": "1037:40:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2662,
+            "id": 2580,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -618,31 +618,31 @@
             "name": "valueAt",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2651,
+              "id": 2569,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2648,
+                  "id": 2566,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2580,
                   "src": "930:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2647,
+                    "id": 2565,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "930:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -651,10 +651,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2650,
+                  "id": 2568,
                   "name": "_blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2580,
                   "src": "958:20:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -663,7 +663,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2649,
+                    "id": 2567,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "958:7:9",
@@ -680,15 +680,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2654,
+              "id": 2572,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2653,
+                  "id": 2571,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2580,
                   "src": "1015:6:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -697,7 +697,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2652,
+                    "id": 2570,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1015:6:9",
@@ -712,7 +712,7 @@
               ],
               "src": "1014:8:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "913:171:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -720,7 +720,7 @@
           },
           {
             "body": {
-              "id": 2679,
+              "id": 2597,
               "nodeType": "Block",
               "src": "1203:76:9",
               "statements": [
@@ -731,55 +731,55 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2671,
+                        "id": 2589,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2664,
+                        "referencedDeclaration": 2582,
                         "src": "1220:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
-                      "id": 2672,
+                      "id": 2590,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "entries",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2617,
+                      "referencedDeclaration": 2535,
                       "src": "1220:12:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                         "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                       }
                     },
-                    "id": 2677,
+                    "id": 2595,
                     "indexExpression": {
                       "argumentTypes": null,
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 2674,
+                          "id": 2592,
                           "name": "self",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2664,
+                          "referencedDeclaration": 2582,
                           "src": "1252:4:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           }
                         },
                         {
                           "argumentTypes": null,
-                          "id": 2675,
+                          "id": 2593,
                           "name": "_blockNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2666,
+                          "referencedDeclaration": 2584,
                           "src": "1258:12:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -790,7 +790,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           },
                           {
@@ -798,18 +798,18 @@
                             "typeString": "uint256"
                           }
                         ],
-                        "id": 2673,
+                        "id": 2591,
                         "name": "indexByBlockNumber",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2791,
+                        "referencedDeclaration": 2709,
                         "src": "1233:18:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_uint256_$",
+                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_uint256_$",
                           "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (uint256)"
                         }
                       },
-                      "id": 2676,
+                      "id": 2594,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -830,19 +830,19 @@
                     "nodeType": "IndexAccess",
                     "src": "1220:52:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage",
                       "typeString": "struct BlockNumbIntsLib.Entry storage ref"
                     }
                   },
-                  "functionReturnParameters": 2670,
-                  "id": 2678,
+                  "functionReturnParameters": 2588,
+                  "id": 2596,
                   "nodeType": "Return",
                   "src": "1213:59:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2680,
+            "id": 2598,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -850,31 +850,31 @@
             "name": "entryAt",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2667,
+              "id": 2585,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2664,
+                  "id": 2582,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2680,
+                  "scope": 2598,
                   "src": "1107:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2663,
+                    "id": 2581,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1107:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -883,10 +883,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2666,
+                  "id": 2584,
                   "name": "_blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2680,
+                  "scope": 2598,
                   "src": "1135:20:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -895,7 +895,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2665,
+                    "id": 2583,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1135:7:9",
@@ -912,31 +912,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2670,
+              "id": 2588,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2669,
+                  "id": 2587,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2680,
+                  "scope": 2598,
                   "src": "1192:5:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                    "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2668,
+                    "id": 2586,
                     "name": "Entry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2614,
+                    "referencedDeclaration": 2532,
                     "src": "1192:5:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry"
                     }
                   },
@@ -946,7 +946,7 @@
               ],
               "src": "1191:7:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1090:189:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -954,7 +954,7 @@
           },
           {
             "body": {
-              "id": 2720,
+              "id": 2638,
               "nodeType": "Block",
               "src": "1383:206:9",
               "statements": [
@@ -968,7 +968,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 2706,
+                        "id": 2624,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -979,7 +979,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2694,
+                          "id": 2612,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -987,7 +987,7 @@
                           "leftExpression": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 2690,
+                            "id": 2608,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1010,32 +1010,32 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 2691,
+                                "id": 2609,
                                 "name": "self",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2682,
+                                "referencedDeclaration": 2600,
                                 "src": "1419:4:9",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                  "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                   "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                                 }
                               },
-                              "id": 2692,
+                              "id": 2610,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "entries",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2617,
+                              "referencedDeclaration": 2535,
                               "src": "1419:12:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                                "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                                 "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                               }
                             },
-                            "id": 2693,
+                            "id": 2611,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
@@ -1063,18 +1063,18 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2705,
+                          "id": 2623,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 2695,
+                            "id": 2613,
                             "name": "blockNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2684,
+                            "referencedDeclaration": 2602,
                             "src": "1454:11:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1091,39 +1091,39 @@
                                 "argumentTypes": null,
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 2696,
+                                  "id": 2614,
                                   "name": "self",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2682,
+                                  "referencedDeclaration": 2600,
                                   "src": "1468:4:9",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                                   }
                                 },
-                                "id": 2697,
+                                "id": 2615,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "entries",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2617,
+                                "referencedDeclaration": 2535,
                                 "src": "1468:12:9",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                                  "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                                   "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                                 }
                               },
-                              "id": 2703,
+                              "id": 2621,
                               "indexExpression": {
                                 "argumentTypes": null,
                                 "commonType": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
                                 },
-                                "id": 2702,
+                                "id": 2620,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -1134,32 +1134,32 @@
                                     "argumentTypes": null,
                                     "expression": {
                                       "argumentTypes": null,
-                                      "id": 2698,
+                                      "id": 2616,
                                       "name": "self",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2682,
+                                      "referencedDeclaration": 2600,
                                       "src": "1481:4:9",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                        "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                         "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                                       }
                                     },
-                                    "id": 2699,
+                                    "id": 2617,
                                     "isConstant": false,
                                     "isLValue": true,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "memberName": "entries",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 2617,
+                                    "referencedDeclaration": 2535,
                                     "src": "1481:12:9",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                                      "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                                       "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                                     }
                                   },
-                                  "id": 2700,
+                                  "id": 2618,
                                   "isConstant": false,
                                   "isLValue": true,
                                   "isPure": false,
@@ -1178,7 +1178,7 @@
                                 "rightExpression": {
                                   "argumentTypes": null,
                                   "hexValue": "31",
-                                  "id": 2701,
+                                  "id": 2619,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -1206,18 +1206,18 @@
                               "nodeType": "IndexAccess",
                               "src": "1468:37:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Entry_$2614_storage",
+                                "typeIdentifier": "t_struct$_Entry_$2532_storage",
                                 "typeString": "struct BlockNumbIntsLib.Entry storage ref"
                               }
                             },
-                            "id": 2704,
+                            "id": 2622,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "blockNumber",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2611,
+                            "referencedDeclaration": 2529,
                             "src": "1468:49:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1244,21 +1244,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2689,
+                      "id": 2607,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        40573,
-                        40574
+                        42425,
+                        42426
                       ],
-                      "referencedDeclaration": 40573,
+                      "referencedDeclaration": 42425,
                       "src": "1393:7:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2707,
+                    "id": 2625,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1272,7 +1272,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2708,
+                  "id": 2626,
                   "nodeType": "ExpressionStatement",
                   "src": "1393:134:9"
                 },
@@ -1285,11 +1285,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 2715,
+                            "id": 2633,
                             "name": "blockNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2684,
+                            "referencedDeclaration": 2602,
                             "src": "1562:11:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1298,11 +1298,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 2716,
+                            "id": 2634,
                             "name": "value",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2686,
+                            "referencedDeclaration": 2604,
                             "src": "1575:5:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_int256",
@@ -1321,18 +1321,18 @@
                               "typeString": "int256"
                             }
                           ],
-                          "id": 2714,
+                          "id": 2632,
                           "name": "Entry",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2614,
+                          "referencedDeclaration": 2532,
                           "src": "1556:5:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_Entry_$2614_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_Entry_$2532_storage_ptr_$",
                             "typeString": "type(struct BlockNumbIntsLib.Entry storage pointer)"
                           }
                         },
-                        "id": 2717,
+                        "id": 2635,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1342,7 +1342,7 @@
                         "nodeType": "FunctionCall",
                         "src": "1556:25:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Entry_$2614_memory",
+                          "typeIdentifier": "t_struct$_Entry_$2532_memory",
                           "typeString": "struct BlockNumbIntsLib.Entry memory"
                         }
                       }
@@ -1350,7 +1350,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Entry_$2614_memory",
+                          "typeIdentifier": "t_struct$_Entry_$2532_memory",
                           "typeString": "struct BlockNumbIntsLib.Entry memory"
                         }
                       ],
@@ -1358,32 +1358,32 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2709,
+                          "id": 2627,
                           "name": "self",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2682,
+                          "referencedDeclaration": 2600,
                           "src": "1538:4:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           }
                         },
-                        "id": 2712,
+                        "id": 2630,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "entries",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2617,
+                        "referencedDeclaration": 2535,
                         "src": "1538:12:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                           "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                         }
                       },
-                      "id": 2713,
+                      "id": 2631,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1393,11 +1393,11 @@
                       "referencedDeclaration": null,
                       "src": "1538:17:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Entry_$2614_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Entry_$2532_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct BlockNumbIntsLib.Entry storage ref) returns (uint256)"
                       }
                     },
-                    "id": 2718,
+                    "id": 2636,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1411,14 +1411,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 2719,
+                  "id": 2637,
                   "nodeType": "ExpressionStatement",
                   "src": "1538:44:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2721,
+            "id": 2639,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1426,31 +1426,31 @@
             "name": "addEntry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2687,
+              "id": 2605,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2682,
+                  "id": 2600,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2721,
+                  "scope": 2639,
                   "src": "1303:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2681,
+                    "id": 2599,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1303:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -1459,10 +1459,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2684,
+                  "id": 2602,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2721,
+                  "scope": 2639,
                   "src": "1331:19:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1471,7 +1471,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2683,
+                    "id": 2601,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1331:7:9",
@@ -1485,10 +1485,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2686,
+                  "id": 2604,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2721,
+                  "scope": 2639,
                   "src": "1352:12:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1497,7 +1497,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2685,
+                    "id": 2603,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1352:6:9",
@@ -1514,12 +1514,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2688,
+              "id": 2606,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1383:0:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1285:304:9",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1527,7 +1527,7 @@
           },
           {
             "body": {
-              "id": 2732,
+              "id": 2650,
               "nodeType": "Block",
               "src": "1686:43:9",
               "statements": [
@@ -1538,32 +1538,32 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2728,
+                        "id": 2646,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2723,
+                        "referencedDeclaration": 2641,
                         "src": "1703:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
-                      "id": 2729,
+                      "id": 2647,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "entries",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2617,
+                      "referencedDeclaration": 2535,
                       "src": "1703:12:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                         "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                       }
                     },
-                    "id": 2730,
+                    "id": 2648,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
@@ -1577,15 +1577,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 2727,
-                  "id": 2731,
+                  "functionReturnParameters": 2645,
+                  "id": 2649,
                   "nodeType": "Return",
                   "src": "1696:26:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2733,
+            "id": 2651,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1593,31 +1593,31 @@
             "name": "count",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2724,
+              "id": 2642,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2723,
+                  "id": 2641,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2733,
+                  "scope": 2651,
                   "src": "1610:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2722,
+                    "id": 2640,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1610:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -1629,15 +1629,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2727,
+              "id": 2645,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2726,
+                  "id": 2644,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2733,
+                  "scope": 2651,
                   "src": "1673:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1646,7 +1646,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2725,
+                    "id": 2643,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1673:7:9",
@@ -1661,7 +1661,7 @@
               ],
               "src": "1672:9:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1595:134:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -1669,7 +1669,7 @@
           },
           {
             "body": {
-              "id": 2744,
+              "id": 2662,
               "nodeType": "Block",
               "src": "1828:36:9",
               "statements": [
@@ -1678,40 +1678,40 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 2741,
+                      "id": 2659,
                       "name": "self",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2735,
+                      "referencedDeclaration": 2653,
                       "src": "1845:4:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                        "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                         "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                       }
                     },
-                    "id": 2742,
+                    "id": 2660,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "entries",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 2617,
+                    "referencedDeclaration": 2535,
                     "src": "1845:12:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                       "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 2740,
-                  "id": 2743,
+                  "functionReturnParameters": 2658,
+                  "id": 2661,
                   "nodeType": "Return",
                   "src": "1838:19:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2745,
+            "id": 2663,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1719,31 +1719,31 @@
             "name": "entries",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2736,
+              "id": 2654,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2735,
+                  "id": 2653,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2745,
+                  "scope": 2663,
                   "src": "1752:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2734,
+                    "id": 2652,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1752:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -1755,41 +1755,41 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2740,
+              "id": 2658,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2739,
+                  "id": 2657,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2745,
+                  "scope": 2663,
                   "src": "1815:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Entry_$2614_memory_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Entry_$2532_memory_$dyn_memory_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry[]"
                   },
                   "typeName": {
                     "baseType": {
                       "contractScope": null,
-                      "id": 2737,
+                      "id": 2655,
                       "name": "Entry",
                       "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 2614,
+                      "referencedDeclaration": 2532,
                       "src": "1815:5:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                        "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                         "typeString": "struct BlockNumbIntsLib.Entry"
                       }
                     },
-                    "id": 2738,
+                    "id": 2656,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "1815:7:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry[]"
                     }
                   },
@@ -1799,7 +1799,7 @@
               ],
               "src": "1814:9:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1735:129:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -1807,7 +1807,7 @@
           },
           {
             "body": {
-              "id": 2790,
+              "id": 2708,
               "nodeType": "Block",
               "src": "1995:216:9",
               "statements": [
@@ -1821,7 +1821,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 2759,
+                        "id": 2677,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1829,7 +1829,7 @@
                         "leftExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 2755,
+                          "id": 2673,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1852,32 +1852,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 2756,
+                              "id": 2674,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2747,
+                              "referencedDeclaration": 2665,
                               "src": "2017:4:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                 "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                               }
                             },
-                            "id": 2757,
+                            "id": 2675,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "entries",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2617,
+                            "referencedDeclaration": 2535,
                             "src": "2017:12:9",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                               "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                             }
                           },
-                          "id": 2758,
+                          "id": 2676,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
@@ -1905,21 +1905,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2754,
+                      "id": 2672,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        40573,
-                        40574
+                        42425,
+                        42426
                       ],
-                      "referencedDeclaration": 40573,
+                      "referencedDeclaration": 42425,
                       "src": "2005:7:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2760,
+                    "id": 2678,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1933,7 +1933,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2761,
+                  "id": 2679,
                   "nodeType": "ExpressionStatement",
                   "src": "2005:32:9"
                 },
@@ -1945,18 +1945,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 2782,
+                      "id": 2700,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 2776,
+                        "id": 2694,
                         "name": "blockNumber",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2749,
+                        "referencedDeclaration": 2667,
                         "src": "2118:11:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1973,39 +1973,39 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 2777,
+                              "id": 2695,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2747,
+                              "referencedDeclaration": 2665,
                               "src": "2133:4:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                 "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                               }
                             },
-                            "id": 2778,
+                            "id": 2696,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "entries",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2617,
+                            "referencedDeclaration": 2535,
                             "src": "2133:12:9",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                               "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                             }
                           },
-                          "id": 2780,
+                          "id": 2698,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 2779,
+                            "id": 2697,
                             "name": "i",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2763,
+                            "referencedDeclaration": 2681,
                             "src": "2146:1:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2019,18 +2019,18 @@
                           "nodeType": "IndexAccess",
                           "src": "2133:15:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Entry_$2614_storage",
+                            "typeIdentifier": "t_struct$_Entry_$2532_storage",
                             "typeString": "struct BlockNumbIntsLib.Entry storage ref"
                           }
                         },
-                        "id": 2781,
+                        "id": 2699,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "blockNumber",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2611,
+                        "referencedDeclaration": 2529,
                         "src": "2133:27:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2044,25 +2044,25 @@
                       }
                     },
                     "falseBody": null,
-                    "id": 2785,
+                    "id": 2703,
                     "nodeType": "IfStatement",
                     "src": "2114:72:9",
                     "trueBody": {
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2783,
+                        "id": 2701,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2763,
+                        "referencedDeclaration": 2681,
                         "src": "2185:1:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "functionReturnParameters": 2753,
-                      "id": 2784,
+                      "functionReturnParameters": 2671,
+                      "id": 2702,
                       "nodeType": "Return",
                       "src": "2178:8:9"
                     }
@@ -2073,18 +2073,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 2772,
+                    "id": 2690,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 2770,
+                      "id": 2688,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2763,
+                      "referencedDeclaration": 2681,
                       "src": "2089:1:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2096,7 +2096,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 2771,
+                      "id": 2689,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2117,18 +2117,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 2786,
+                  "id": 2704,
                   "initializationExpression": {
                     "assignments": [
-                      2763
+                      2681
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 2763,
+                        "id": 2681,
                         "name": "i",
                         "nodeType": "VariableDeclaration",
-                        "scope": 2791,
+                        "scope": 2709,
                         "src": "2052:9:9",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -2137,7 +2137,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 2762,
+                          "id": 2680,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "2052:7:9",
@@ -2150,14 +2150,14 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 2769,
+                    "id": 2687,
                     "initialValue": {
                       "argumentTypes": null,
                       "commonType": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 2768,
+                      "id": 2686,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2168,32 +2168,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 2764,
+                            "id": 2682,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2747,
+                            "referencedDeclaration": 2665,
                             "src": "2064:4:9",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                              "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                               "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                             }
                           },
-                          "id": 2765,
+                          "id": 2683,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "entries",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2617,
+                          "referencedDeclaration": 2535,
                           "src": "2064:12:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                             "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                           }
                         },
-                        "id": 2766,
+                        "id": 2684,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -2212,7 +2212,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "31",
-                        "id": 2767,
+                        "id": 2685,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2239,7 +2239,7 @@
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 2774,
+                      "id": 2692,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2250,11 +2250,11 @@
                       "src": "2097:3:9",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 2773,
+                        "id": 2691,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2763,
+                        "referencedDeclaration": 2681,
                         "src": "2097:1:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2266,7 +2266,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 2775,
+                    "id": 2693,
                     "nodeType": "ExpressionStatement",
                     "src": "2097:3:9"
                   },
@@ -2279,21 +2279,21 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 2787,
+                      "id": 2705,
                       "name": "revert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        40575,
-                        40576
+                        42427,
+                        42428
                       ],
-                      "referencedDeclaration": 40575,
+                      "referencedDeclaration": 42427,
                       "src": "2196:6:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_revert_pure$__$returns$__$",
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 2788,
+                    "id": 2706,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2307,14 +2307,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2789,
+                  "id": 2707,
                   "nodeType": "ExpressionStatement",
                   "src": "2196:8:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2791,
+            "id": 2709,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2322,31 +2322,31 @@
             "name": "indexByBlockNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2750,
+              "id": 2668,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2747,
+                  "id": 2665,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2791,
+                  "scope": 2709,
                   "src": "1898:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2746,
+                    "id": 2664,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1898:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -2355,10 +2355,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2749,
+                  "id": 2667,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2791,
+                  "scope": 2709,
                   "src": "1926:19:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2367,7 +2367,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2748,
+                    "id": 2666,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1926:7:9",
@@ -2384,15 +2384,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2753,
+              "id": 2671,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2752,
+                  "id": 2670,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2791,
+                  "scope": 2709,
                   "src": "1982:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2401,7 +2401,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2751,
+                    "id": 2669,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1982:7:9",
@@ -2416,14 +2416,14 @@
               ],
               "src": "1981:9:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1870:341:9",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 2793,
+        "scope": 2711,
         "src": "148:2065:9"
       }
     ],
@@ -2433,14 +2433,14 @@
     "absolutePath": "/opt/buildagent/work/855e104608380c36/contracts/BlockNumbIntsLib.sol",
     "exportedSymbols": {
       "BlockNumbIntsLib": [
-        2792
+        2710
       ]
     },
-    "id": 2793,
+    "id": 2711,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2609,
+        "id": 2527,
         "literals": [
           "solidity",
           "^",
@@ -2456,23 +2456,23 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2792,
+        "id": 2710,
         "linearizedBaseContracts": [
-          2792
+          2710
         ],
         "name": "BlockNumbIntsLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "BlockNumbIntsLib.Entry",
-            "id": 2614,
+            "id": 2532,
             "members": [
               {
                 "constant": false,
-                "id": 2611,
+                "id": 2529,
                 "name": "blockNumber",
                 "nodeType": "VariableDeclaration",
-                "scope": 2614,
+                "scope": 2532,
                 "src": "348:19:9",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2481,7 +2481,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2610,
+                  "id": 2528,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "348:7:9",
@@ -2495,10 +2495,10 @@
               },
               {
                 "constant": false,
-                "id": 2613,
+                "id": 2531,
                 "name": "value",
                 "nodeType": "VariableDeclaration",
-                "scope": 2614,
+                "scope": 2532,
                 "src": "377:12:9",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -2507,7 +2507,7 @@
                   "typeString": "int256"
                 },
                 "typeName": {
-                  "id": 2612,
+                  "id": 2530,
                   "name": "int256",
                   "nodeType": "ElementaryTypeName",
                   "src": "377:6:9",
@@ -2522,46 +2522,46 @@
             ],
             "name": "Entry",
             "nodeType": "StructDefinition",
-            "scope": 2792,
+            "scope": 2710,
             "src": "325:71:9",
             "visibility": "public"
           },
           {
             "canonicalName": "BlockNumbIntsLib.BlockNumbInts",
-            "id": 2618,
+            "id": 2536,
             "members": [
               {
                 "constant": false,
-                "id": 2617,
+                "id": 2535,
                 "name": "entries",
                 "nodeType": "VariableDeclaration",
-                "scope": 2618,
+                "scope": 2536,
                 "src": "433:15:9",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage_ptr",
                   "typeString": "struct BlockNumbIntsLib.Entry[]"
                 },
                 "typeName": {
                   "baseType": {
                     "contractScope": null,
-                    "id": 2615,
+                    "id": 2533,
                     "name": "Entry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2614,
+                    "referencedDeclaration": 2532,
                     "src": "433:5:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry"
                     }
                   },
-                  "id": 2616,
+                  "id": 2534,
                   "length": null,
                   "nodeType": "ArrayTypeName",
                   "src": "433:7:9",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry[]"
                   }
                 },
@@ -2571,13 +2571,13 @@
             ],
             "name": "BlockNumbInts",
             "nodeType": "StructDefinition",
-            "scope": 2792,
+            "scope": 2710,
             "src": "402:53:9",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 2631,
+              "id": 2549,
               "nodeType": "Block",
               "src": "703:51:9",
               "statements": [
@@ -2587,14 +2587,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2626,
+                        "id": 2544,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2620,
+                        "referencedDeclaration": 2538,
                         "src": "728:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
@@ -2602,18 +2602,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2627,
+                          "id": 2545,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 40560,
+                          "referencedDeclaration": 42412,
                           "src": "734:5:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 2628,
+                        "id": 2546,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2631,7 +2631,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         },
                         {
@@ -2639,18 +2639,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2625,
+                      "id": 2543,
                       "name": "valueAt",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2662,
+                      "referencedDeclaration": 2580,
                       "src": "720:7:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_int256_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_int256_$",
                         "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (int256)"
                       }
                     },
-                    "id": 2629,
+                    "id": 2547,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2664,15 +2664,15 @@
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2624,
-                  "id": 2630,
+                  "functionReturnParameters": 2542,
+                  "id": 2548,
                   "nodeType": "Return",
                   "src": "713:34:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2632,
+            "id": 2550,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2680,31 +2680,31 @@
             "name": "currentValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2621,
+              "id": 2539,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2620,
+                  "id": 2538,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2632,
+                  "scope": 2550,
                   "src": "628:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2619,
+                    "id": 2537,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "628:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -2716,15 +2716,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2624,
+              "id": 2542,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2623,
+                  "id": 2541,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2632,
+                  "scope": 2550,
                   "src": "691:6:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2733,7 +2733,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2622,
+                    "id": 2540,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "691:6:9",
@@ -2748,7 +2748,7 @@
               ],
               "src": "690:8:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "606:148:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -2756,7 +2756,7 @@
           },
           {
             "body": {
-              "id": 2645,
+              "id": 2563,
               "nodeType": "Block",
               "src": "856:51:9",
               "statements": [
@@ -2766,14 +2766,14 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 2640,
+                        "id": 2558,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2634,
+                        "referencedDeclaration": 2552,
                         "src": "881:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
@@ -2781,18 +2781,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2641,
+                          "id": 2559,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 40560,
+                          "referencedDeclaration": 42412,
                           "src": "887:5:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 2642,
+                        "id": 2560,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2810,7 +2810,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         },
                         {
@@ -2818,18 +2818,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 2639,
+                      "id": 2557,
                       "name": "entryAt",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2680,
+                      "referencedDeclaration": 2598,
                       "src": "873:7:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2614_memory_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2532_memory_ptr_$",
                         "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (struct BlockNumbIntsLib.Entry memory)"
                       }
                     },
-                    "id": 2643,
+                    "id": 2561,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2839,19 +2839,19 @@
                     "nodeType": "FunctionCall",
                     "src": "873:27:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry memory"
                     }
                   },
-                  "functionReturnParameters": 2638,
-                  "id": 2644,
+                  "functionReturnParameters": 2556,
+                  "id": 2562,
                   "nodeType": "Return",
                   "src": "866:34:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2646,
+            "id": 2564,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2859,31 +2859,31 @@
             "name": "currentEntry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2635,
+              "id": 2553,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2634,
+                  "id": 2552,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2646,
+                  "scope": 2564,
                   "src": "782:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2633,
+                    "id": 2551,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "782:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -2895,31 +2895,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2638,
+              "id": 2556,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2637,
+                  "id": 2555,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2646,
+                  "scope": 2564,
                   "src": "845:5:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                    "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2636,
+                    "id": 2554,
                     "name": "Entry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2614,
+                    "referencedDeclaration": 2532,
                     "src": "845:5:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry"
                     }
                   },
@@ -2929,7 +2929,7 @@
               ],
               "src": "844:7:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "760:147:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -2937,7 +2937,7 @@
           },
           {
             "body": {
-              "id": 2661,
+              "id": 2579,
               "nodeType": "Block",
               "src": "1027:57:9",
               "statements": [
@@ -2949,24 +2949,24 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 2656,
+                          "id": 2574,
                           "name": "self",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2648,
+                          "referencedDeclaration": 2566,
                           "src": "1052:4:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           }
                         },
                         {
                           "argumentTypes": null,
-                          "id": 2657,
+                          "id": 2575,
                           "name": "_blockNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2650,
+                          "referencedDeclaration": 2568,
                           "src": "1058:12:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2977,7 +2977,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           },
                           {
@@ -2985,18 +2985,18 @@
                             "typeString": "uint256"
                           }
                         ],
-                        "id": 2655,
+                        "id": 2573,
                         "name": "entryAt",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2680,
+                        "referencedDeclaration": 2598,
                         "src": "1044:7:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2614_memory_ptr_$",
+                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_struct$_Entry_$2532_memory_ptr_$",
                           "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (struct BlockNumbIntsLib.Entry memory)"
                         }
                       },
-                      "id": 2658,
+                      "id": 2576,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3006,33 +3006,33 @@
                       "nodeType": "FunctionCall",
                       "src": "1044:27:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                        "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                         "typeString": "struct BlockNumbIntsLib.Entry memory"
                       }
                     },
-                    "id": 2659,
+                    "id": 2577,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "value",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 2613,
+                    "referencedDeclaration": 2531,
                     "src": "1044:33:9",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 2654,
-                  "id": 2660,
+                  "functionReturnParameters": 2572,
+                  "id": 2578,
                   "nodeType": "Return",
                   "src": "1037:40:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2662,
+            "id": 2580,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3040,31 +3040,31 @@
             "name": "valueAt",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2651,
+              "id": 2569,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2648,
+                  "id": 2566,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2580,
                   "src": "930:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2647,
+                    "id": 2565,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "930:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -3073,10 +3073,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2650,
+                  "id": 2568,
                   "name": "_blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2580,
                   "src": "958:20:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3085,7 +3085,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2649,
+                    "id": 2567,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "958:7:9",
@@ -3102,15 +3102,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2654,
+              "id": 2572,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2653,
+                  "id": 2571,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2580,
                   "src": "1015:6:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3119,7 +3119,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2652,
+                    "id": 2570,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1015:6:9",
@@ -3134,7 +3134,7 @@
               ],
               "src": "1014:8:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "913:171:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -3142,7 +3142,7 @@
           },
           {
             "body": {
-              "id": 2679,
+              "id": 2597,
               "nodeType": "Block",
               "src": "1203:76:9",
               "statements": [
@@ -3153,55 +3153,55 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2671,
+                        "id": 2589,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2664,
+                        "referencedDeclaration": 2582,
                         "src": "1220:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
-                      "id": 2672,
+                      "id": 2590,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "entries",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2617,
+                      "referencedDeclaration": 2535,
                       "src": "1220:12:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                         "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                       }
                     },
-                    "id": 2677,
+                    "id": 2595,
                     "indexExpression": {
                       "argumentTypes": null,
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 2674,
+                          "id": 2592,
                           "name": "self",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2664,
+                          "referencedDeclaration": 2582,
                           "src": "1252:4:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           }
                         },
                         {
                           "argumentTypes": null,
-                          "id": 2675,
+                          "id": 2593,
                           "name": "_blockNumber",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2666,
+                          "referencedDeclaration": 2584,
                           "src": "1258:12:9",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -3212,7 +3212,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           },
                           {
@@ -3220,18 +3220,18 @@
                             "typeString": "uint256"
                           }
                         ],
-                        "id": 2673,
+                        "id": 2591,
                         "name": "indexByBlockNumber",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2791,
+                        "referencedDeclaration": 2709,
                         "src": "1233:18:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2618_storage_ptr_$_t_uint256_$returns$_t_uint256_$",
+                          "typeIdentifier": "t_function_internal_view$_t_struct$_BlockNumbInts_$2536_storage_ptr_$_t_uint256_$returns$_t_uint256_$",
                           "typeString": "function (struct BlockNumbIntsLib.BlockNumbInts storage pointer,uint256) view returns (uint256)"
                         }
                       },
-                      "id": 2676,
+                      "id": 2594,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3252,19 +3252,19 @@
                     "nodeType": "IndexAccess",
                     "src": "1220:52:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage",
                       "typeString": "struct BlockNumbIntsLib.Entry storage ref"
                     }
                   },
-                  "functionReturnParameters": 2670,
-                  "id": 2678,
+                  "functionReturnParameters": 2588,
+                  "id": 2596,
                   "nodeType": "Return",
                   "src": "1213:59:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2680,
+            "id": 2598,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3272,31 +3272,31 @@
             "name": "entryAt",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2667,
+              "id": 2585,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2664,
+                  "id": 2582,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2680,
+                  "scope": 2598,
                   "src": "1107:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2663,
+                    "id": 2581,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1107:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -3305,10 +3305,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2666,
+                  "id": 2584,
                   "name": "_blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2680,
+                  "scope": 2598,
                   "src": "1135:20:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3317,7 +3317,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2665,
+                    "id": 2583,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1135:7:9",
@@ -3334,31 +3334,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2670,
+              "id": 2588,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2669,
+                  "id": 2587,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2680,
+                  "scope": 2598,
                   "src": "1192:5:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Entry_$2614_memory_ptr",
+                    "typeIdentifier": "t_struct$_Entry_$2532_memory_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2668,
+                    "id": 2586,
                     "name": "Entry",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2614,
+                    "referencedDeclaration": 2532,
                     "src": "1192:5:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                      "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry"
                     }
                   },
@@ -3368,7 +3368,7 @@
               ],
               "src": "1191:7:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1090:189:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -3376,7 +3376,7 @@
           },
           {
             "body": {
-              "id": 2720,
+              "id": 2638,
               "nodeType": "Block",
               "src": "1383:206:9",
               "statements": [
@@ -3390,7 +3390,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 2706,
+                        "id": 2624,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3401,7 +3401,7 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2694,
+                          "id": 2612,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3409,7 +3409,7 @@
                           "leftExpression": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 2690,
+                            "id": 2608,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -3432,32 +3432,32 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 2691,
+                                "id": 2609,
                                 "name": "self",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2682,
+                                "referencedDeclaration": 2600,
                                 "src": "1419:4:9",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                  "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                   "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                                 }
                               },
-                              "id": 2692,
+                              "id": 2610,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "entries",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2617,
+                              "referencedDeclaration": 2535,
                               "src": "1419:12:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                                "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                                 "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                               }
                             },
-                            "id": 2693,
+                            "id": 2611,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
@@ -3485,18 +3485,18 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 2705,
+                          "id": 2623,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
                             "argumentTypes": null,
-                            "id": 2695,
+                            "id": 2613,
                             "name": "blockNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2684,
+                            "referencedDeclaration": 2602,
                             "src": "1454:11:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3513,39 +3513,39 @@
                                 "argumentTypes": null,
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 2696,
+                                  "id": 2614,
                                   "name": "self",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2682,
+                                  "referencedDeclaration": 2600,
                                   "src": "1468:4:9",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                                   }
                                 },
-                                "id": 2697,
+                                "id": 2615,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "entries",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2617,
+                                "referencedDeclaration": 2535,
                                 "src": "1468:12:9",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                                  "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                                   "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                                 }
                               },
-                              "id": 2703,
+                              "id": 2621,
                               "indexExpression": {
                                 "argumentTypes": null,
                                 "commonType": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
                                 },
-                                "id": 2702,
+                                "id": 2620,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -3556,32 +3556,32 @@
                                     "argumentTypes": null,
                                     "expression": {
                                       "argumentTypes": null,
-                                      "id": 2698,
+                                      "id": 2616,
                                       "name": "self",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 2682,
+                                      "referencedDeclaration": 2600,
                                       "src": "1481:4:9",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                        "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                         "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                                       }
                                     },
-                                    "id": 2699,
+                                    "id": 2617,
                                     "isConstant": false,
                                     "isLValue": true,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "memberName": "entries",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 2617,
+                                    "referencedDeclaration": 2535,
                                     "src": "1481:12:9",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                                      "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                                       "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                                     }
                                   },
-                                  "id": 2700,
+                                  "id": 2618,
                                   "isConstant": false,
                                   "isLValue": true,
                                   "isPure": false,
@@ -3600,7 +3600,7 @@
                                 "rightExpression": {
                                   "argumentTypes": null,
                                   "hexValue": "31",
-                                  "id": 2701,
+                                  "id": 2619,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -3628,18 +3628,18 @@
                               "nodeType": "IndexAccess",
                               "src": "1468:37:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Entry_$2614_storage",
+                                "typeIdentifier": "t_struct$_Entry_$2532_storage",
                                 "typeString": "struct BlockNumbIntsLib.Entry storage ref"
                               }
                             },
-                            "id": 2704,
+                            "id": 2622,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "blockNumber",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2611,
+                            "referencedDeclaration": 2529,
                             "src": "1468:49:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3666,21 +3666,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2689,
+                      "id": 2607,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        40573,
-                        40574
+                        42425,
+                        42426
                       ],
-                      "referencedDeclaration": 40573,
+                      "referencedDeclaration": 42425,
                       "src": "1393:7:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2707,
+                    "id": 2625,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3694,7 +3694,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2708,
+                  "id": 2626,
                   "nodeType": "ExpressionStatement",
                   "src": "1393:134:9"
                 },
@@ -3707,11 +3707,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 2715,
+                            "id": 2633,
                             "name": "blockNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2684,
+                            "referencedDeclaration": 2602,
                             "src": "1562:11:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3720,11 +3720,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 2716,
+                            "id": 2634,
                             "name": "value",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2686,
+                            "referencedDeclaration": 2604,
                             "src": "1575:5:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_int256",
@@ -3743,18 +3743,18 @@
                               "typeString": "int256"
                             }
                           ],
-                          "id": 2714,
+                          "id": 2632,
                           "name": "Entry",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2614,
+                          "referencedDeclaration": 2532,
                           "src": "1556:5:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_Entry_$2614_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_Entry_$2532_storage_ptr_$",
                             "typeString": "type(struct BlockNumbIntsLib.Entry storage pointer)"
                           }
                         },
-                        "id": 2717,
+                        "id": 2635,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3764,7 +3764,7 @@
                         "nodeType": "FunctionCall",
                         "src": "1556:25:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Entry_$2614_memory",
+                          "typeIdentifier": "t_struct$_Entry_$2532_memory",
                           "typeString": "struct BlockNumbIntsLib.Entry memory"
                         }
                       }
@@ -3772,7 +3772,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Entry_$2614_memory",
+                          "typeIdentifier": "t_struct$_Entry_$2532_memory",
                           "typeString": "struct BlockNumbIntsLib.Entry memory"
                         }
                       ],
@@ -3780,32 +3780,32 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 2709,
+                          "id": 2627,
                           "name": "self",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2682,
+                          "referencedDeclaration": 2600,
                           "src": "1538:4:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                            "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                             "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                           }
                         },
-                        "id": 2712,
+                        "id": 2630,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "entries",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2617,
+                        "referencedDeclaration": 2535,
                         "src": "1538:12:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                           "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                         }
                       },
-                      "id": 2713,
+                      "id": 2631,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3815,11 +3815,11 @@
                       "referencedDeclaration": null,
                       "src": "1538:17:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Entry_$2614_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Entry_$2532_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct BlockNumbIntsLib.Entry storage ref) returns (uint256)"
                       }
                     },
-                    "id": 2718,
+                    "id": 2636,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3833,14 +3833,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 2719,
+                  "id": 2637,
                   "nodeType": "ExpressionStatement",
                   "src": "1538:44:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2721,
+            "id": 2639,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3848,31 +3848,31 @@
             "name": "addEntry",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2687,
+              "id": 2605,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2682,
+                  "id": 2600,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2721,
+                  "scope": 2639,
                   "src": "1303:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2681,
+                    "id": 2599,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1303:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -3881,10 +3881,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2684,
+                  "id": 2602,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2721,
+                  "scope": 2639,
                   "src": "1331:19:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3893,7 +3893,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2683,
+                    "id": 2601,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1331:7:9",
@@ -3907,10 +3907,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2686,
+                  "id": 2604,
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2721,
+                  "scope": 2639,
                   "src": "1352:12:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3919,7 +3919,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 2685,
+                    "id": 2603,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1352:6:9",
@@ -3936,12 +3936,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2688,
+              "id": 2606,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1383:0:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1285:304:9",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3949,7 +3949,7 @@
           },
           {
             "body": {
-              "id": 2732,
+              "id": 2650,
               "nodeType": "Block",
               "src": "1686:43:9",
               "statements": [
@@ -3960,32 +3960,32 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2728,
+                        "id": 2646,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2723,
+                        "referencedDeclaration": 2641,
                         "src": "1703:4:9",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                          "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                           "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                         }
                       },
-                      "id": 2729,
+                      "id": 2647,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "entries",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2617,
+                      "referencedDeclaration": 2535,
                       "src": "1703:12:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                         "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                       }
                     },
-                    "id": 2730,
+                    "id": 2648,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
@@ -3999,15 +3999,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 2727,
-                  "id": 2731,
+                  "functionReturnParameters": 2645,
+                  "id": 2649,
                   "nodeType": "Return",
                   "src": "1696:26:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2733,
+            "id": 2651,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4015,31 +4015,31 @@
             "name": "count",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2724,
+              "id": 2642,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2723,
+                  "id": 2641,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2733,
+                  "scope": 2651,
                   "src": "1610:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2722,
+                    "id": 2640,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1610:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -4051,15 +4051,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2727,
+              "id": 2645,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2726,
+                  "id": 2644,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2733,
+                  "scope": 2651,
                   "src": "1673:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4068,7 +4068,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2725,
+                    "id": 2643,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1673:7:9",
@@ -4083,7 +4083,7 @@
               ],
               "src": "1672:9:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1595:134:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -4091,7 +4091,7 @@
           },
           {
             "body": {
-              "id": 2744,
+              "id": 2662,
               "nodeType": "Block",
               "src": "1828:36:9",
               "statements": [
@@ -4100,40 +4100,40 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 2741,
+                      "id": 2659,
                       "name": "self",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2735,
+                      "referencedDeclaration": 2653,
                       "src": "1845:4:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                        "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                         "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                       }
                     },
-                    "id": 2742,
+                    "id": 2660,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
                     "lValueRequested": false,
                     "memberName": "entries",
                     "nodeType": "MemberAccess",
-                    "referencedDeclaration": 2617,
+                    "referencedDeclaration": 2535,
                     "src": "1845:12:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                       "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 2740,
-                  "id": 2743,
+                  "functionReturnParameters": 2658,
+                  "id": 2661,
                   "nodeType": "Return",
                   "src": "1838:19:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2745,
+            "id": 2663,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4141,31 +4141,31 @@
             "name": "entries",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2736,
+              "id": 2654,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2735,
+                  "id": 2653,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2745,
+                  "scope": 2663,
                   "src": "1752:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2734,
+                    "id": 2652,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1752:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -4177,41 +4177,41 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2740,
+              "id": 2658,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2739,
+                  "id": 2657,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2745,
+                  "scope": 2663,
                   "src": "1815:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Entry_$2614_memory_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Entry_$2532_memory_$dyn_memory_ptr",
                     "typeString": "struct BlockNumbIntsLib.Entry[]"
                   },
                   "typeName": {
                     "baseType": {
                       "contractScope": null,
-                      "id": 2737,
+                      "id": 2655,
                       "name": "Entry",
                       "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 2614,
+                      "referencedDeclaration": 2532,
                       "src": "1815:5:9",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Entry_$2614_storage_ptr",
+                        "typeIdentifier": "t_struct$_Entry_$2532_storage_ptr",
                         "typeString": "struct BlockNumbIntsLib.Entry"
                       }
                     },
-                    "id": 2738,
+                    "id": 2656,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "1815:7:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.Entry[]"
                     }
                   },
@@ -4221,7 +4221,7 @@
               ],
               "src": "1814:9:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1735:129:9",
             "stateMutability": "view",
             "superFunction": null,
@@ -4229,7 +4229,7 @@
           },
           {
             "body": {
-              "id": 2790,
+              "id": 2708,
               "nodeType": "Block",
               "src": "1995:216:9",
               "statements": [
@@ -4243,7 +4243,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 2759,
+                        "id": 2677,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4251,7 +4251,7 @@
                         "leftExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 2755,
+                          "id": 2673,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4274,32 +4274,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 2756,
+                              "id": 2674,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2747,
+                              "referencedDeclaration": 2665,
                               "src": "2017:4:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                 "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                               }
                             },
-                            "id": 2757,
+                            "id": 2675,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "entries",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2617,
+                            "referencedDeclaration": 2535,
                             "src": "2017:12:9",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                               "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                             }
                           },
-                          "id": 2758,
+                          "id": 2676,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
@@ -4327,21 +4327,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 2754,
+                      "id": 2672,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        40573,
-                        40574
+                        42425,
+                        42426
                       ],
-                      "referencedDeclaration": 40573,
+                      "referencedDeclaration": 42425,
                       "src": "2005:7:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 2760,
+                    "id": 2678,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4355,7 +4355,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2761,
+                  "id": 2679,
                   "nodeType": "ExpressionStatement",
                   "src": "2005:32:9"
                 },
@@ -4367,18 +4367,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 2782,
+                      "id": 2700,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 2776,
+                        "id": 2694,
                         "name": "blockNumber",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2749,
+                        "referencedDeclaration": 2667,
                         "src": "2118:11:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4395,39 +4395,39 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 2777,
+                              "id": 2695,
                               "name": "self",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2747,
+                              "referencedDeclaration": 2665,
                               "src": "2133:4:9",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                                "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                                 "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                               }
                             },
-                            "id": 2778,
+                            "id": 2696,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "entries",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2617,
+                            "referencedDeclaration": 2535,
                             "src": "2133:12:9",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                               "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                             }
                           },
-                          "id": 2780,
+                          "id": 2698,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 2779,
+                            "id": 2697,
                             "name": "i",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2763,
+                            "referencedDeclaration": 2681,
                             "src": "2146:1:9",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4441,18 +4441,18 @@
                           "nodeType": "IndexAccess",
                           "src": "2133:15:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Entry_$2614_storage",
+                            "typeIdentifier": "t_struct$_Entry_$2532_storage",
                             "typeString": "struct BlockNumbIntsLib.Entry storage ref"
                           }
                         },
-                        "id": 2781,
+                        "id": 2699,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "blockNumber",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2611,
+                        "referencedDeclaration": 2529,
                         "src": "2133:27:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4466,25 +4466,25 @@
                       }
                     },
                     "falseBody": null,
-                    "id": 2785,
+                    "id": 2703,
                     "nodeType": "IfStatement",
                     "src": "2114:72:9",
                     "trueBody": {
                       "expression": {
                         "argumentTypes": null,
-                        "id": 2783,
+                        "id": 2701,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2763,
+                        "referencedDeclaration": 2681,
                         "src": "2185:1:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         }
                       },
-                      "functionReturnParameters": 2753,
-                      "id": 2784,
+                      "functionReturnParameters": 2671,
+                      "id": 2702,
                       "nodeType": "Return",
                       "src": "2178:8:9"
                     }
@@ -4495,18 +4495,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 2772,
+                    "id": 2690,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 2770,
+                      "id": 2688,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2763,
+                      "referencedDeclaration": 2681,
                       "src": "2089:1:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4518,7 +4518,7 @@
                     "rightExpression": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 2771,
+                      "id": 2689,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -4539,18 +4539,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 2786,
+                  "id": 2704,
                   "initializationExpression": {
                     "assignments": [
-                      2763
+                      2681
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 2763,
+                        "id": 2681,
                         "name": "i",
                         "nodeType": "VariableDeclaration",
-                        "scope": 2791,
+                        "scope": 2709,
                         "src": "2052:9:9",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -4559,7 +4559,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 2762,
+                          "id": 2680,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "2052:7:9",
@@ -4572,14 +4572,14 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 2769,
+                    "id": 2687,
                     "initialValue": {
                       "argumentTypes": null,
                       "commonType": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 2768,
+                      "id": 2686,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4590,32 +4590,32 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 2764,
+                            "id": 2682,
                             "name": "self",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2747,
+                            "referencedDeclaration": 2665,
                             "src": "2064:4:9",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                              "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                               "typeString": "struct BlockNumbIntsLib.BlockNumbInts storage pointer"
                             }
                           },
-                          "id": 2765,
+                          "id": 2683,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "entries",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2617,
+                          "referencedDeclaration": 2535,
                           "src": "2064:12:9",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_Entry_$2614_storage_$dyn_storage",
+                            "typeIdentifier": "t_array$_t_struct$_Entry_$2532_storage_$dyn_storage",
                             "typeString": "struct BlockNumbIntsLib.Entry storage ref[] storage ref"
                           }
                         },
-                        "id": 2766,
+                        "id": 2684,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
@@ -4634,7 +4634,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "31",
-                        "id": 2767,
+                        "id": 2685,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -4661,7 +4661,7 @@
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 2774,
+                      "id": 2692,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4672,11 +4672,11 @@
                       "src": "2097:3:9",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 2773,
+                        "id": 2691,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2763,
+                        "referencedDeclaration": 2681,
                         "src": "2097:1:9",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4688,7 +4688,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 2775,
+                    "id": 2693,
                     "nodeType": "ExpressionStatement",
                     "src": "2097:3:9"
                   },
@@ -4701,21 +4701,21 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 2787,
+                      "id": 2705,
                       "name": "revert",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        40575,
-                        40576
+                        42427,
+                        42428
                       ],
-                      "referencedDeclaration": 40575,
+                      "referencedDeclaration": 42427,
                       "src": "2196:6:9",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_revert_pure$__$returns$__$",
                         "typeString": "function () pure"
                       }
                     },
-                    "id": 2788,
+                    "id": 2706,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4729,14 +4729,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 2789,
+                  "id": 2707,
                   "nodeType": "ExpressionStatement",
                   "src": "2196:8:9"
                 }
               ]
             },
             "documentation": null,
-            "id": 2791,
+            "id": 2709,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -4744,31 +4744,31 @@
             "name": "indexByBlockNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2750,
+              "id": 2668,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2747,
+                  "id": 2665,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2791,
+                  "scope": 2709,
                   "src": "1898:26:9",
                   "stateVariable": false,
                   "storageLocation": "storage",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                    "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                     "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 2746,
+                    "id": 2664,
                     "name": "BlockNumbInts",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 2618,
+                    "referencedDeclaration": 2536,
                     "src": "1898:13:9",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_BlockNumbInts_$2618_storage_ptr",
+                      "typeIdentifier": "t_struct$_BlockNumbInts_$2536_storage_ptr",
                       "typeString": "struct BlockNumbIntsLib.BlockNumbInts"
                     }
                   },
@@ -4777,10 +4777,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2749,
+                  "id": 2667,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2791,
+                  "scope": 2709,
                   "src": "1926:19:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4789,7 +4789,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2748,
+                    "id": 2666,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1926:7:9",
@@ -4806,15 +4806,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 2753,
+              "id": 2671,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2752,
+                  "id": 2670,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2791,
+                  "scope": 2709,
                   "src": "1982:7:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4823,7 +4823,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 2751,
+                    "id": 2669,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1982:7:9",
@@ -4838,14 +4838,14 @@
               ],
               "src": "1981:9:9"
             },
-            "scope": 2792,
+            "scope": 2710,
             "src": "1870:341:9",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "internal"
           }
         ],
-        "scope": 2793,
+        "scope": 2711,
         "src": "148:2065:9"
       }
     ],
@@ -4856,12 +4856,13 @@
     "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
   },
   "networks": {
-    "1": {
+    "3": {
       "events": {},
       "links": {},
-      "address": "0xcb1a97acac9597b9ea177348ed669667ecea9657"
+      "address": "0x4802e09fe8bac8dc96a35d71a4d250bb02dfe491",
+      "transactionHash": "0x54dc79972af07687944d8f24961e5fdb0f76a13cddc7079a18db7f6dcc30a8ae"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-20T16:25:35.408Z"
+  "updatedAt": "2019-01-31T11:28:29.423Z"
 }
