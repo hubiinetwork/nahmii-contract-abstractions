@@ -1,12 +1,12 @@
 {
   "name": "nahmii-contract-abstractions",
   "version": "1.0.0",
-  "description": "Smart contract abstractions for nahmii",
-  "main": "index.js",
+  "description": "Smart contract abstractions for nahmii deployed to mainnet",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "link": "npm run link:truffle",
-    "link:truffle": "ln -s build ../../build"
+    "publish:major": "npm version major && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "symlink:build": "[ ! -d ../../build/contracts ] && mkdir -p ../../build && ln -vs $(pwd)/build/contracts ../../build/contracts",
+    "symlink:build:force": "rm -rf ../../build/contracts && npm run symlink:build"
   },
   "keywords": [
     "nahmii",
