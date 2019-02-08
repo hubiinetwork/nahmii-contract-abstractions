@@ -32,9 +32,9 @@ To install the SDK into your project, simply run:
 npm install nahmii-contract-abstractions
 ```
 
-## Usage
+## Symlink
 
-### Symlink
+### Contract abstractions
 
 The package includes directory `build/contracts` that contains the 
 actual contract abstractions. In a dependent project it will often be more
@@ -58,7 +58,28 @@ npm run symlink:build:force
 will also delete previously existent `../../build/contracts` as seen from
 the package directory (`node_modules/nahmii-contract-abstractions`).
 
-### Node
+### Event samples
+
+The package also includes directory `events` containing samples of events
+emitted from contracts. There is one JSON file per contract.
+
+Similar to contract abstractions the package contains scripts to symlink 
+its `events` to `../../events` in a dependent project. In order to run the 
+script you may run
+
+```
+npm run symlink:events
+```
+or
+
+```
+npm run symlink:events:force
+```
+
+The latter will delete previously existent `../../events` as seen from
+the package directory (`node_modules/nahmii-contract-abstractions`).
+
+## Usage in Node.js context
 
 The contract abstractions may be required into Node.js scripts and used 
 in contexts of [web3](https://web3js.readthedocs.io/en/latest/), 
