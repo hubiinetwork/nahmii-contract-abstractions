@@ -32,12 +32,14 @@ To install the SDK into your project, simply run:
 npm install nahmii-contract-abstractions
 ```
 
-## Symlink
-
-### Contract abstractions
+## Contract abstractions
 
 The package includes directory `build/contracts` that contains the 
-actual contract abstractions. In a dependent project it will often be more
+actual contract abstractions.
+
+### Symlinks
+
+In a dependent project it will often be more
 convenient to have the abstractions available in its own `build/contracts` 
 directory rather than having to refer to the lengthy 
 `node_modules/nahmii-contract-abstractions/build/contracts`.
@@ -58,10 +60,46 @@ npm run symlink:build:force
 will also delete previously existent `../../build/contracts` as seen from
 the package directory (`node_modules/nahmii-contract-abstractions`).
 
-### Event samples
+### Usage in Node.js context
+
+The contract abstractions may be required into Node.js scripts and used 
+in contexts of [web3](https://web3js.readthedocs.io/en/latest/), 
+[ethers](https://ethers.io) or [Truffle](https://truffleframework.com/).
+
+Assuming the above symlink has been carried out a simple script may be 
+as follows:
+
+```
+const ClientFundAbstn = require('./build/contracts/ClientFund.json'); 
+
+console.log(ClientFundAbstn.networks[1].address);
+// 0xcc8d82f6ba952966e63001c7b320eef2ae729099
+
+console.log(ClientFundAbstn.abi);
+// [ { constant: false,
+//     inputs: [ [Object] ],
+//     name: 'authorizeRegisteredService',
+//     outputs: [],
+//     payable: false,
+//     stateMutability: 'nonpayable',
+//     type: 'function' },
+//   { constant: true,
+//     inputs: [ [Object] ],
+//     name: 'isRegisteredBeneficiary',
+// ...
+```
+
+If no symlink has been done a contract abstraction may rather be required as
+```
+const ClientFundAbstn = require('nahmii-contract-abstractions').getAbstraction('ClientFund');
+```
+
+## Event samples
 
 The package also includes directory `events` containing samples of events
 emitted from contracts. There is one JSON file per contract.
+
+### Symlinks
 
 Similar to contract abstractions the package contains scripts to symlink 
 its `events` to `../../events` in a dependent project. In order to run the 
@@ -79,31 +117,13 @@ npm run symlink:events:force
 The latter will delete previously existent `../../events` as seen from
 the package directory (`node_modules/nahmii-contract-abstractions`).
 
-## Usage in Node.js context
+### Usage in Node.js context
 
-The contract abstractions may be required into Node.js scripts and used 
-in contexts of [web3](https://web3js.readthedocs.io/en/latest/), 
-[ethers](https://ethers.io) or [Truffle](https://truffleframework.com/).
-
-Assuming the above symlink has been carried out a simple script may be 
-as follows:
-
+As with contract abstractions events may be required into a Node.js context by 
 ```
-const ClientFund = require('./build/contracts/ClientFund.json'); 
-
-console.log(ClientFund.networks[1].address);
-// 0xcc8d82f6ba952966e63001c7b320eef2ae729099
-
-console.log(ClientFund.abi);
-// [ { constant: false,
-//     inputs: [ [Object] ],
-//     name: 'authorizeRegisteredService',
-//     outputs: [],
-//     payable: false,
-//     stateMutability: 'nonpayable',
-//     type: 'function' },
-//   { constant: true,
-//     inputs: [ [Object] ],
-//     name: 'isRegisteredBeneficiary',
-// ...
+const ClientFundEvents = require('./events/ClientFund.json');
+```
+if previous symlink has been carried out. Alternatively an event may be required as
+```
+const ReceiveEvent = require('nahmii-contract-abstractions').getEvent('ClientFund', 'ReceiveEvent');
 ```
