@@ -8,7 +8,8 @@
     "symlink:build": "[ ! -d ../../build/contracts ] && mkdir -p ../../build && ln -vs $(pwd)/build/contracts ../../build/contracts",
     "symlink:build:force": "rm -rf ../../build/contracts && npm run symlink:build",
     "symlink:events": "[ ! -d ../../events ] && ln -vs $(pwd)/events ../../events",
-    "symlink:events:force": "rm -rf ../../events && npm run symlink:events"
+    "symlink:events:force": "rm -rf ../../events && npm run symlink:events",
+    "test": "mocha lib/**/*.spec.js"
   },
   "keywords": [
     "nahmii",
@@ -16,5 +17,10 @@
     "ethereum"
   ],
   "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
-  "license": "LGPL-3.0"
+  "license": "LGPL-3.0",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
 }
