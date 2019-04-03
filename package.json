@@ -1,7 +1,41 @@
 {
-  "name": "nahmii-contract-abstractions-ropsten",
-  "version": "1.0.0-ropsten.9",
+  "_from": "nahmii-contract-abstractions-ropsten@latest",
+  "_id": "nahmii-contract-abstractions-ropsten@1.0.0-ropsten.10",
+  "_inBundle": false,
+  "_integrity": "sha512-IhLRBJGoXgJ0VpZ5f7/3Wpko/QobXPVgYiK/r57OxxLdU+XK17aT/b902VdG91VEEc2abvCTQMcCZRV2tiKzEw==",
+  "_location": "/nahmii-contract-abstractions-ropsten",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nahmii-contract-abstractions-ropsten@latest",
+    "name": "nahmii-contract-abstractions-ropsten",
+    "escapedName": "nahmii-contract-abstractions-ropsten",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/nahmii-contract-abstractions-ropsten/-/nahmii-contract-abstractions-ropsten-1.0.0-ropsten.10.tgz",
+  "_shasum": "ffb0d13142d1efa957d9f46d55079abc1513c048",
+  "_spec": "nahmii-contract-abstractions-ropsten@latest",
+  "_where": "/Users/jensivar/workspace/hubiinetwork/nahmii-contract-abstractions/tmp",
+  "author": {
+    "name": "Jens Ivar Jørdre",
+    "email": "jensivar@hubii.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Smart contract abstractions for nahmii deployed to Ropsten",
+  "keywords": [
+    "nahmii",
+    "smart contracts",
+    "ethereum"
+  ],
+  "license": "LGPL-3.0",
+  "name": "nahmii-contract-abstractions-ropsten",
   "scripts": {
     "publish:major": "npm version major && npm publish",
     "publish:minor": "npm version minor && npm publish",
@@ -10,11 +44,5 @@
     "symlink:events": "[ ! -d ../../events ] && ln -vs $(pwd)/events ../../events",
     "symlink:events:force": "rm -rf ../../events && npm run symlink:events"
   },
-  "keywords": [
-    "nahmii",
-    "smart contracts",
-    "ethereum"
-  ],
-  "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
-  "license": "LGPL-3.0"
+  "version": "1.0.0-ropsten.10"
 }
