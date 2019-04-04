@@ -91,8 +91,33 @@ console.log(ClientFundAbstn.abi);
 
 If no symlink has been done a contract abstraction may rather be required as
 ```
-const ClientFundAbstn = require('nahmii-contract-abstractions').getAbstraction('ClientFund');
+const abstractions = require('nahmii-contract-abstractions');
+
+console.log(abstractions.getAbstraction('ClientFund'));
+// { contractName: 'ClientFund',
+//   abi:
+//    [ { constant: false,
+//        inputs: [Array],
+//        name: 'authorizeRegisteredService',
+//        outputs: [],
+//        payable: false,
+//        stateMutability: 'nonpayable',
+//        type: 'function' },
+// ...
 ```
+
+The full set of names of contract abstractions may be obtained as
+```
+console.log(abtractions.getAbstractionNames());
+// [ 'BalanceTracker',
+//   'BlockNumbCurrenciesLib',
+//   'BlockNumbDisdIntsLib',
+//   'BlockNumbIntsLib',
+//   'BlockNumbUintsLib',
+//   'ClientFund',
+//   'Configuration',
+// ...
+``` 
 
 ## Event samples
 
