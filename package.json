@@ -46,7 +46,7 @@
     "symlink:events:force": "rm -rf ../../events && npm run symlink:events",
     "test": "mocha lib/**/*.spec.js"
   },
-  "version": "1.0.0-ropsten.10",
+  "version": "1.0.0-ropsten.10.1",
   "main": "lib/index.js",
   "devDependencies": {
     "chai": "^4.2.0",
