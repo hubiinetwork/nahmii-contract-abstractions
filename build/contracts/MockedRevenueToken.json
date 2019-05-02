@@ -1,0 +1,942 @@
+{
+  "contractName": "MockedRevenueToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "_balanceBlocksIn",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "_reset",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "balanceBlocksIn",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_bbIn",
+          "type": "uint256"
+        }
+      ],
+      "name": "_setBalanceBlocksIn",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506101e8806100206000396000f3006080604052600436106100485763ffffffff60e060020a6000350416631592f0ab811461004d57806355f729c81461006457806394c9446e1461008f578063a52079ea146100af575b600080fd5b34801561005957600080fd5b506100626100cf565b005b34801561007057600080fd5b506100796100d5565b604051610086919061018b565b60405180910390f35b34801561009b57600080fd5b506100626100aa366004610156565b6100db565b3480156100bb57600080fd5b506100796100ca366004610109565b6100e0565b60008055565b60005481565b600055565b6000549392505050565b60006100f682356101a2565b9392505050565b60006100f6823561019f565b60008060006060848603121561011e57600080fd5b600061012a86866100ea565b935050602061013b868287016100fd565b925050604061014c868287016100fd565b9150509250925092565b60006020828403121561016857600080fd5b600061017484846100fd565b949350505050565b6101858161019f565b82525050565b60208101610199828461017c565b92915050565b90565b600160a060020a0316905600a265627a7a72305820a69c4a6fb8a867da25cbe99a38d95e8cdeef384ff9ffcf8ba03d7970e415d5486c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x6080604052600436106100485763ffffffff60e060020a6000350416631592f0ab811461004d57806355f729c81461006457806394c9446e1461008f578063a52079ea146100af575b600080fd5b34801561005957600080fd5b506100626100cf565b005b34801561007057600080fd5b506100796100d5565b604051610086919061018b565b60405180910390f35b34801561009b57600080fd5b506100626100aa366004610156565b6100db565b3480156100bb57600080fd5b506100796100ca366004610109565b6100e0565b60008055565b60005481565b600055565b6000549392505050565b60006100f682356101a2565b9392505050565b60006100f6823561019f565b60008060006060848603121561011e57600080fd5b600061012a86866100ea565b935050602061013b868287016100fd565b925050604061014c868287016100fd565b9150509250925092565b60006020828403121561016857600080fd5b600061017484846100fd565b949350505050565b6101858161019f565b82525050565b60208101610199828461017c565b92915050565b90565b600160a060020a0316905600a265627a7a72305820a69c4a6fb8a867da25cbe99a38d95e8cdeef384ff9ffcf8ba03d7970e415d5486c6578706572696d656e74616cf50037",
+  "sourceMap": "268:684:115:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;268:684:115;;;;;;;",
+  "deployedSourceMap": "268:684:115:-;;;;;;;;;-1:-1:-1;;;268:684:115;;;;;;;;;;;;;;;;;;;;;;;;;;;;630:70;;8:9:-1;5:2;;;30:1;27;20:12;5:2;630:70:115;;;;;;447:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;447:31:115;;;;;;;;;;;;;;;;;;;;850:100;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;850:100:115;;;;;;;;;706:138;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;706:138:115;;;;;;;;;630:70;692:1;673:20;;630:70::o;447:31::-;;;;:::o;850:100::-;919:16;:24;850:100::o;706:138::-;791:7;821:16;706:138;;;;;:::o;5:118:-1:-;;72:46;110:6;97:20;72:46;;;63:55;57:66;-1:-1;;;57:66;130:118;;197:46;235:6;222:20;197:46;;255:491;;;;393:2;381:9;372:7;368:23;364:32;361:2;;;409:1;406;399:12;361:2;444:1;461:53;506:7;486:9;461:53;;;451:63;;423:97;551:2;569:53;614:7;605:6;594:9;590:22;569:53;;;559:63;;530:98;659:2;677:53;722:7;713:6;702:9;698:22;677:53;;;667:63;;638:98;355:391;;;;;;753:241;;857:2;845:9;836:7;832:23;828:32;825:2;;;873:1;870;863:12;825:2;908:1;925:53;970:7;950:9;925:53;;;915:63;819:175;-1:-1;;;;819:175;1001:110;1074:31;1099:5;1074:31;;;1069:3;1062:44;1056:55;;;1118:193;1226:2;1211:18;;1240:61;1215:9;1274:6;1240:61;;;1197:114;;;;;1318:79;1387:5;1370:27;1404:128;-1:-1;;;;;1473:54;;1456:76",
+  "source": "/*\n * Hubii Nahmii\n *\n * Compliant with the Hubii Nahmii specification v0.12.\n *\n * Copyright (C) 2017-2018 Hubii AS\n */\n\npragma solidity ^0.4.25;\npragma experimental ABIEncoderV2;\n\n/**\n * @title MockedRevenueToken\n * @notice Mocked implementation of RevenueToken\n */\ncontract MockedRevenueToken {\n    //\n    // Variables\n    // -----------------------------------------------------------------------------------------------------------------\n    uint256 public _balanceBlocksIn;\n\n    //\n    // Functions\n    // -----------------------------------------------------------------------------------------------------------------\n    function _reset()\n    public\n    {\n        _balanceBlocksIn = 0;\n    }\n\n    function balanceBlocksIn(address, uint256, uint256)\n    public\n    view\n    returns (uint256)\n    {\n        return _balanceBlocksIn;\n    }\n\n    function _setBalanceBlocksIn(uint256 _bbIn)\n    public\n    {\n        _balanceBlocksIn = _bbIn;\n    }\n}\n",
+  "sourcePath": "/opt/buildagent/work/855e104608380c36/contracts/test/MockedRevenueToken.sol",
+  "ast": {
+    "absolutePath": "/opt/buildagent/work/855e104608380c36/contracts/test/MockedRevenueToken.sol",
+    "exportedSymbols": {
+      "MockedRevenueToken": [
+        46334
+      ]
+    },
+    "id": 46335,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 46298,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "122:24:115"
+      },
+      {
+        "id": 46299,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "147:33:115"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title MockedRevenueToken\n@notice Mocked implementation of RevenueToken",
+        "fullyImplemented": true,
+        "id": 46334,
+        "linearizedBaseContracts": [
+          46334
+        ],
+        "name": "MockedRevenueToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 46301,
+            "name": "_balanceBlocksIn",
+            "nodeType": "VariableDeclaration",
+            "scope": 46334,
+            "src": "447:31:115",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 46300,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "447:7:115",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46308,
+              "nodeType": "Block",
+              "src": "663:37:115",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 46306,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 46304,
+                      "name": "_balanceBlocksIn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46301,
+                      "src": "673:16:115",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 46305,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "692:1:115",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "673:20:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 46307,
+                  "nodeType": "ExpressionStatement",
+                  "src": "673:20:115"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46309,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "_reset",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46302,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "645:2:115"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46303,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:0:115"
+            },
+            "scope": 46334,
+            "src": "630:70:115",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46322,
+              "nodeType": "Block",
+              "src": "804:40:115",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 46320,
+                    "name": "_balanceBlocksIn",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 46301,
+                    "src": "821:16:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 46319,
+                  "id": 46321,
+                  "nodeType": "Return",
+                  "src": "814:23:115"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46323,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "balanceBlocksIn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46316,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46311,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "731:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 46310,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "731:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46313,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "740:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46312,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "740:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46315,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "749:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46314,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "749:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "730:27:115"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46319,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46318,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "791:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46317,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "791:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "790:9:115"
+            },
+            "scope": 46334,
+            "src": "706:138:115",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46332,
+              "nodeType": "Block",
+              "src": "909:41:115",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 46330,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 46328,
+                      "name": "_balanceBlocksIn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46301,
+                      "src": "919:16:115",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 46329,
+                      "name": "_bbIn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46325,
+                      "src": "938:5:115",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "919:24:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 46331,
+                  "nodeType": "ExpressionStatement",
+                  "src": "919:24:115"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46333,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "_setBalanceBlocksIn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46325,
+                  "name": "_bbIn",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46333,
+                  "src": "879:13:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46324,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "879:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "878:15:115"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46327,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "909:0:115"
+            },
+            "scope": 46334,
+            "src": "850:100:115",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 46335,
+        "src": "268:684:115"
+      }
+    ],
+    "src": "122:831:115"
+  },
+  "legacyAST": {
+    "absolutePath": "/opt/buildagent/work/855e104608380c36/contracts/test/MockedRevenueToken.sol",
+    "exportedSymbols": {
+      "MockedRevenueToken": [
+        46334
+      ]
+    },
+    "id": 46335,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 46298,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".25"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "122:24:115"
+      },
+      {
+        "id": 46299,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "147:33:115"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title MockedRevenueToken\n@notice Mocked implementation of RevenueToken",
+        "fullyImplemented": true,
+        "id": 46334,
+        "linearizedBaseContracts": [
+          46334
+        ],
+        "name": "MockedRevenueToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 46301,
+            "name": "_balanceBlocksIn",
+            "nodeType": "VariableDeclaration",
+            "scope": 46334,
+            "src": "447:31:115",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 46300,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "447:7:115",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46308,
+              "nodeType": "Block",
+              "src": "663:37:115",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 46306,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 46304,
+                      "name": "_balanceBlocksIn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46301,
+                      "src": "673:16:115",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 46305,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "692:1:115",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "673:20:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 46307,
+                  "nodeType": "ExpressionStatement",
+                  "src": "673:20:115"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46309,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "_reset",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46302,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "645:2:115"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46303,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:0:115"
+            },
+            "scope": 46334,
+            "src": "630:70:115",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46322,
+              "nodeType": "Block",
+              "src": "804:40:115",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 46320,
+                    "name": "_balanceBlocksIn",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 46301,
+                    "src": "821:16:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 46319,
+                  "id": 46321,
+                  "nodeType": "Return",
+                  "src": "814:23:115"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46323,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "balanceBlocksIn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46316,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46311,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "731:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 46310,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "731:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46313,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "740:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46312,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "740:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46315,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "749:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46314,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "749:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "730:27:115"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46319,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46318,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46323,
+                  "src": "791:7:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46317,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "791:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "790:9:115"
+            },
+            "scope": 46334,
+            "src": "706:138:115",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46332,
+              "nodeType": "Block",
+              "src": "909:41:115",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 46330,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 46328,
+                      "name": "_balanceBlocksIn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46301,
+                      "src": "919:16:115",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 46329,
+                      "name": "_bbIn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 46325,
+                      "src": "938:5:115",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "919:24:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 46331,
+                  "nodeType": "ExpressionStatement",
+                  "src": "919:24:115"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46333,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "_setBalanceBlocksIn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 46326,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46325,
+                  "name": "_bbIn",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46333,
+                  "src": "879:13:115",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46324,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "879:7:115",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "878:15:115"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 46327,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "909:0:115"
+            },
+            "scope": 46334,
+            "src": "850:100:115",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 46335,
+        "src": "268:684:115"
+      }
+    ],
+    "src": "122:831:115"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.2",
+  "updatedAt": "2019-04-17T19:44:57.869Z"
+}
