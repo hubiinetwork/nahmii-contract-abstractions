@@ -4,8 +4,7 @@
 
 This package hosts contract abstractions generated from the deployment of 
 [nahmii contracts](https://github.com/hubiinetwork/nahmii-contracts.git) to 
-the Ethereum mainnet and to Ropsten testnet, found in branches `master` and 
-`develop`, respectively. 
+the Ethereum mainnet.
 
 ## About nahmii
 

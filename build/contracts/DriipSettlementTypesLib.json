@@ -1,41 +1,44 @@
 {
   "contractName": "DriipSettlementTypesLib",
   "abi": [],
-  "bytecode": "0x605a602c600b82828239805160001a60731460008114601c57601e565bfe5b5030600052607381538281f30073000000000000000000000000000000000000000030146080604052600080fd00a265627a7a72305820f97828644d3c8d40c9ec5371137ba79470b709dde76e12415b5cd1d4c13a70bd6c6578706572696d656e74616cf50037",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fd00a265627a7a72305820f97828644d3c8d40c9ec5371137ba79470b709dde76e12415b5cd1d4c13a70bd6c6578706572696d656e74616cf50037",
-  "sourceMap": "270:476:32:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
-  "deployedSourceMap": "270:476:32:-;;;;;;;;",
-  "source": "/*\n * Hubii Nahmii\n *\n * Compliant with the Hubii Nahmii specification v0.12.\n *\n * Copyright (C) 2017-2018 Hubii AS\n */\n\npragma solidity ^0.4.25;\npragma experimental ABIEncoderV2;\n\n/**\n * @title     DriipSettlementTypesLib\n * @dev       Types for driip settlements\n */\nlibrary DriipSettlementTypesLib {\n    //\n    // Structures\n    // -----------------------------------------------------------------------------------------------------------------\n    enum SettlementRole {Origin, Target}\n\n    struct SettlementParty {\n        uint256 nonce;\n        address wallet;\n        bool done;\n    }\n\n    struct Settlement {\n        string settledKind;\n        bytes32 settledHash;\n        SettlementParty origin;\n        SettlementParty target;\n    }\n}",
+  "bytecode": "0x60636023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea365627a7a72305820a75a0faecb392d0c8a2a810fa1ddf3d75ed1cb74bbb6312b58ce9f60c14036536c6578706572696d656e74616cf564736f6c63430005090040",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea365627a7a72305820a75a0faecb392d0c8a2a810fa1ddf3d75ed1cb74bbb6312b58ce9f60c14036536c6578706572696d656e74616cf564736f6c63430005090040",
+  "sourceMap": "278:509:32:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "278:509:32:-;;;;;;;;",
+  "source": "/*\n * Hubii Nahmii\n *\n * Compliant with the Hubii Nahmii specification v0.12.\n *\n * Copyright (C) 2017-2018 Hubii AS\n */\n\npragma solidity >=0.4.25 <0.6.0;\npragma experimental ABIEncoderV2;\n\n/**\n * @title     DriipSettlementTypesLib\n * @dev       Types for driip settlements\n */\nlibrary DriipSettlementTypesLib {\n    //\n    // Structures\n    // -----------------------------------------------------------------------------------------------------------------\n    enum SettlementRole {Origin, Target}\n\n    struct SettlementParty {\n        uint256 nonce;\n        address wallet;\n        bool done;\n        uint256 doneBlockNumber;\n    }\n\n    struct Settlement {\n        string settledKind;\n        bytes32 settledHash;\n        SettlementParty origin;\n        SettlementParty target;\n    }\n}",
   "sourcePath": "/opt/buildagent/work/855e104608380c36/contracts/DriipSettlementTypesLib.sol",
   "ast": {
     "absolutePath": "/opt/buildagent/work/855e104608380c36/contracts/DriipSettlementTypesLib.sol",
     "exportedSymbols": {
       "DriipSettlementTypesLib": [
-        15530
+        16295
       ]
     },
-    "id": 15531,
+    "id": 16296,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 15509,
+        "id": 16272,
         "literals": [
           "solidity",
-          "^",
+          ">=",
           "0.4",
-          ".25"
+          ".25",
+          "<",
+          "0.6",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "122:24:32"
+        "src": "122:32:32"
       },
       {
-        "id": 15510,
+        "id": 16273,
         "literals": [
           "experimental",
           "ABIEncoderV2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "147:33:32"
+        "src": "155:33:32"
       },
       {
         "baseContracts": [],
@@ -43,45 +46,45 @@
         "contractKind": "library",
         "documentation": "@title     DriipSettlementTypesLib\n@dev       Types for driip settlements",
         "fullyImplemented": true,
-        "id": 15530,
+        "id": 16295,
         "linearizedBaseContracts": [
-          15530
+          16295
         ],
         "name": "DriipSettlementTypesLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "DriipSettlementTypesLib.SettlementRole",
-            "id": 15513,
+            "id": 16276,
             "members": [
               {
-                "id": 15511,
+                "id": 16274,
                 "name": "Origin",
                 "nodeType": "EnumValue",
-                "src": "475:6:32"
+                "src": "483:6:32"
               },
               {
-                "id": 15512,
+                "id": 16275,
                 "name": "Target",
                 "nodeType": "EnumValue",
-                "src": "483:6:32"
+                "src": "491:6:32"
               }
             ],
             "name": "SettlementRole",
             "nodeType": "EnumDefinition",
-            "src": "454:36:32"
+            "src": "462:36:32"
           },
           {
             "canonicalName": "DriipSettlementTypesLib.SettlementParty",
-            "id": 15520,
+            "id": 16285,
             "members": [
               {
                 "constant": false,
-                "id": 15515,
+                "id": 16278,
                 "name": "nonce",
                 "nodeType": "VariableDeclaration",
-                "scope": 15520,
-                "src": "529:13:32",
+                "scope": 16285,
+                "src": "537:13:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -89,10 +92,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 15514,
+                  "id": 16277,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "529:7:32",
+                  "src": "537:7:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -103,11 +106,11 @@
               },
               {
                 "constant": false,
-                "id": 15517,
+                "id": 16280,
                 "name": "wallet",
                 "nodeType": "VariableDeclaration",
-                "scope": 15520,
-                "src": "552:14:32",
+                "scope": 16285,
+                "src": "560:14:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -115,10 +118,11 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 15516,
+                  "id": 16279,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "552:7:32",
+                  "src": "560:7:32",
+                  "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
                     "typeString": "address"
@@ -129,11 +133,11 @@
               },
               {
                 "constant": false,
-                "id": 15519,
+                "id": 16282,
                 "name": "done",
                 "nodeType": "VariableDeclaration",
-                "scope": 15520,
-                "src": "576:9:32",
+                "scope": 16285,
+                "src": "584:9:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -141,13 +145,39 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 15518,
+                  "id": 16281,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "576:4:32",
+                  "src": "584:4:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 16284,
+                "name": "doneBlockNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 16285,
+                "src": "603:23:32",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 16283,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "603:7:32",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
                   }
                 },
                 "value": null,
@@ -156,21 +186,21 @@
             ],
             "name": "SettlementParty",
             "nodeType": "StructDefinition",
-            "scope": 15530,
-            "src": "496:96:32",
+            "scope": 16295,
+            "src": "504:129:32",
             "visibility": "public"
           },
           {
             "canonicalName": "DriipSettlementTypesLib.Settlement",
-            "id": 15529,
+            "id": 16294,
             "members": [
               {
                 "constant": false,
-                "id": 15522,
+                "id": 16287,
                 "name": "settledKind",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "626:18:32",
+                "scope": 16294,
+                "src": "667:18:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -178,10 +208,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 15521,
+                  "id": 16286,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "626:6:32",
+                  "src": "667:6:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -192,11 +222,11 @@
               },
               {
                 "constant": false,
-                "id": 15524,
+                "id": 16289,
                 "name": "settledHash",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "654:19:32",
+                "scope": 16294,
+                "src": "695:19:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -204,10 +234,10 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 15523,
+                  "id": 16288,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "654:7:32",
+                  "src": "695:7:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -218,26 +248,26 @@
               },
               {
                 "constant": false,
-                "id": 15526,
+                "id": 16291,
                 "name": "origin",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "683:22:32",
+                "scope": 16294,
+                "src": "724:22:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                  "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                   "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 15525,
+                  "id": 16290,
                   "name": "SettlementParty",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 15520,
-                  "src": "683:15:32",
+                  "referencedDeclaration": 16285,
+                  "src": "724:15:32",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                    "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                     "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                   }
                 },
@@ -246,26 +276,26 @@
               },
               {
                 "constant": false,
-                "id": 15528,
+                "id": 16293,
                 "name": "target",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "715:22:32",
+                "scope": 16294,
+                "src": "756:22:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                  "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                   "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 15527,
+                  "id": 16292,
                   "name": "SettlementParty",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 15520,
-                  "src": "715:15:32",
+                  "referencedDeclaration": 16285,
+                  "src": "756:15:32",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                    "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                     "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                   }
                 },
@@ -275,46 +305,49 @@
             ],
             "name": "Settlement",
             "nodeType": "StructDefinition",
-            "scope": 15530,
-            "src": "598:146:32",
+            "scope": 16295,
+            "src": "639:146:32",
             "visibility": "public"
           }
         ],
-        "scope": 15531,
-        "src": "270:476:32"
+        "scope": 16296,
+        "src": "278:509:32"
       }
     ],
-    "src": "122:624:32"
+    "src": "122:665:32"
   },
   "legacyAST": {
     "absolutePath": "/opt/buildagent/work/855e104608380c36/contracts/DriipSettlementTypesLib.sol",
     "exportedSymbols": {
       "DriipSettlementTypesLib": [
-        15530
+        16295
       ]
     },
-    "id": 15531,
+    "id": 16296,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 15509,
+        "id": 16272,
         "literals": [
           "solidity",
-          "^",
+          ">=",
           "0.4",
-          ".25"
+          ".25",
+          "<",
+          "0.6",
+          ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "122:24:32"
+        "src": "122:32:32"
       },
       {
-        "id": 15510,
+        "id": 16273,
         "literals": [
           "experimental",
           "ABIEncoderV2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "147:33:32"
+        "src": "155:33:32"
       },
       {
         "baseContracts": [],
@@ -322,45 +355,45 @@
         "contractKind": "library",
         "documentation": "@title     DriipSettlementTypesLib\n@dev       Types for driip settlements",
         "fullyImplemented": true,
-        "id": 15530,
+        "id": 16295,
         "linearizedBaseContracts": [
-          15530
+          16295
         ],
         "name": "DriipSettlementTypesLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "DriipSettlementTypesLib.SettlementRole",
-            "id": 15513,
+            "id": 16276,
             "members": [
               {
-                "id": 15511,
+                "id": 16274,
                 "name": "Origin",
                 "nodeType": "EnumValue",
-                "src": "475:6:32"
+                "src": "483:6:32"
               },
               {
-                "id": 15512,
+                "id": 16275,
                 "name": "Target",
                 "nodeType": "EnumValue",
-                "src": "483:6:32"
+                "src": "491:6:32"
               }
             ],
             "name": "SettlementRole",
             "nodeType": "EnumDefinition",
-            "src": "454:36:32"
+            "src": "462:36:32"
           },
           {
             "canonicalName": "DriipSettlementTypesLib.SettlementParty",
-            "id": 15520,
+            "id": 16285,
             "members": [
               {
                 "constant": false,
-                "id": 15515,
+                "id": 16278,
                 "name": "nonce",
                 "nodeType": "VariableDeclaration",
-                "scope": 15520,
-                "src": "529:13:32",
+                "scope": 16285,
+                "src": "537:13:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -368,10 +401,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 15514,
+                  "id": 16277,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "529:7:32",
+                  "src": "537:7:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -382,11 +415,11 @@
               },
               {
                 "constant": false,
-                "id": 15517,
+                "id": 16280,
                 "name": "wallet",
                 "nodeType": "VariableDeclaration",
-                "scope": 15520,
-                "src": "552:14:32",
+                "scope": 16285,
+                "src": "560:14:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -394,10 +427,11 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 15516,
+                  "id": 16279,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "552:7:32",
+                  "src": "560:7:32",
+                  "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
                     "typeString": "address"
@@ -408,11 +442,11 @@
               },
               {
                 "constant": false,
-                "id": 15519,
+                "id": 16282,
                 "name": "done",
                 "nodeType": "VariableDeclaration",
-                "scope": 15520,
-                "src": "576:9:32",
+                "scope": 16285,
+                "src": "584:9:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -420,13 +454,39 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 15518,
+                  "id": 16281,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
-                  "src": "576:4:32",
+                  "src": "584:4:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bool",
                     "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 16284,
+                "name": "doneBlockNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 16285,
+                "src": "603:23:32",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 16283,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "603:7:32",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
                   }
                 },
                 "value": null,
@@ -435,21 +495,21 @@
             ],
             "name": "SettlementParty",
             "nodeType": "StructDefinition",
-            "scope": 15530,
-            "src": "496:96:32",
+            "scope": 16295,
+            "src": "504:129:32",
             "visibility": "public"
           },
           {
             "canonicalName": "DriipSettlementTypesLib.Settlement",
-            "id": 15529,
+            "id": 16294,
             "members": [
               {
                 "constant": false,
-                "id": 15522,
+                "id": 16287,
                 "name": "settledKind",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "626:18:32",
+                "scope": 16294,
+                "src": "667:18:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -457,10 +517,10 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 15521,
+                  "id": 16286,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
-                  "src": "626:6:32",
+                  "src": "667:6:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_string_storage_ptr",
                     "typeString": "string"
@@ -471,11 +531,11 @@
               },
               {
                 "constant": false,
-                "id": 15524,
+                "id": 16289,
                 "name": "settledHash",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "654:19:32",
+                "scope": 16294,
+                "src": "695:19:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -483,10 +543,10 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 15523,
+                  "id": 16288,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "654:7:32",
+                  "src": "695:7:32",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -497,26 +557,26 @@
               },
               {
                 "constant": false,
-                "id": 15526,
+                "id": 16291,
                 "name": "origin",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "683:22:32",
+                "scope": 16294,
+                "src": "724:22:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                  "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                   "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 15525,
+                  "id": 16290,
                   "name": "SettlementParty",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 15520,
-                  "src": "683:15:32",
+                  "referencedDeclaration": 16285,
+                  "src": "724:15:32",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                    "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                     "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                   }
                 },
@@ -525,26 +585,26 @@
               },
               {
                 "constant": false,
-                "id": 15528,
+                "id": 16293,
                 "name": "target",
                 "nodeType": "VariableDeclaration",
-                "scope": 15529,
-                "src": "715:22:32",
+                "scope": 16294,
+                "src": "756:22:32",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                  "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                   "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 15527,
+                  "id": 16292,
                   "name": "SettlementParty",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 15520,
-                  "src": "715:15:32",
+                  "referencedDeclaration": 16285,
+                  "src": "756:15:32",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_SettlementParty_$15520_storage_ptr",
+                    "typeIdentifier": "t_struct$_SettlementParty_$16285_storage_ptr",
                     "typeString": "struct DriipSettlementTypesLib.SettlementParty"
                   }
                 },
@@ -554,29 +614,29 @@
             ],
             "name": "Settlement",
             "nodeType": "StructDefinition",
-            "scope": 15530,
-            "src": "598:146:32",
+            "scope": 16295,
+            "src": "639:146:32",
             "visibility": "public"
           }
         ],
-        "scope": 15531,
-        "src": "270:476:32"
+        "scope": 16296,
+        "src": "278:509:32"
       }
     ],
-    "src": "122:624:32"
+    "src": "122:665:32"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
+    "version": "0.5.9+commit.e560f70d.Emscripten.clang"
   },
   "networks": {
     "1": {
       "events": {},
       "links": {},
-      "address": "0xc6b312c836043d4d8664968b9f73cb452777ab23",
+      "address": "0xf20c875ff24087dd3395342901870b855eddab20",
       "transactionHash": "0xef9fd3eb70c90137154977ea72dcd4ba25c75ecf58413100c4ad12e53a9be0f6"
     }
   },
   "schemaVersion": "2.0.2",
-  "updatedAt": "2019-04-18T00:23:49.612Z"
+  "updatedAt": "2019-06-15T22:15:56.903Z"
 }
